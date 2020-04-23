@@ -52,6 +52,18 @@ describe('sayHello', function () {
         expect(sayHello(null)).toBe('Hello, World!');
     });
     it('should return Hello, World! if array used', function () {
-        expect(sayHello([])).toBe('Hello, World!')
+        expect(sayHello([])).toBe('Hello, World!');
+    });
+});
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return true when passed 5', function () {
+        expect(isFive()).toBe(5);
     });
 });
