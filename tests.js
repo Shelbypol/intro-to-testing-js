@@ -48,7 +48,10 @@ describe('sayHello', function () {
     it('should return Hello, !', function () {
         expect(sayHello('')).toBe('Hello, !');
     });
-    it('should return undefined', function () {
+    it('should return Hello, World! if null', function () {
         expect(sayHello(null)).toBe('Hello, World!');
+    });
+    it('should return Hello, World! if array used', function () {
+        expect(sayHello([])).toBe('Hello, World!')
     });
 });

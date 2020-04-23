@@ -13,5 +13,6 @@ function sayHello(input) {
     if(input === true || input === false){
         return sayHello('World')
     }
+
     return "Hello, " + input + "!";
 }
