@@ -20,3 +20,10 @@ function sayHello(input) {
 function isFive(input) {
     return parseFloat(input) === 5;
 }
+
+function isEven(input) {
+    if (input === false){
+        return false;
+    }
+    return input % 2 === 0;
+}
