@@ -17,6 +17,6 @@ function sayHello(input) {
     return "Hello, " + input + "!";
 }
 
-function isFive() {
-    return true;
+function isFive(input) {
+    return parseFloat(input) === 5;
 }
