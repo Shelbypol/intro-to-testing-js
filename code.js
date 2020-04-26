@@ -34,5 +34,7 @@ function isVowel(x){
     return result;
 }
 
-
+function add(num1, num2) {
+    return parseFloat(num1) + parseFloat(num2);
+}
 
