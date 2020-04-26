@@ -31,7 +31,7 @@ function isEven(input) {
 function isVowel(x){
     var result;
     result = x === "A" || x === "E" || x === "I" || x === "O" || x === "U" || x === "a" || x === "e" || x === "i" || x === "o" || x === "u";
-    return !!result;
+    return result;
 }
 
 
