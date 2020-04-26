@@ -72,7 +72,7 @@ describe('isFive', function () {
 });
 
 describe('isEven', function (){
-   it('shoudld be defined a function', function () {
+   it('should be defined a function', function () {
         expect(typeof isEven).toBe('function');
    });
    it('should return a boolean no matter what', function () {
@@ -105,7 +105,39 @@ describe('isEven', function (){
    it('should return false when nothing is executed', function () {
         expect(isEven()).toBe(false);
    });
+});
 
+describe('isVowel', function (){
+    it('should be defined a function', function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a \'boolean\' ', function () {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+    it('should return true when \'a\' is called', function () {
+        expect(isVowel('a')).toBe(true);
+    });
+    it('should return true when \'A\' is called', function () {
+        expect(isVowel('A')).toBe(true);
+    });
+    it('should return false when \'y\' is called', function () {
+        expect(isVowel('y')).toBe(false);
+    });
+    it('should return false when 4 is called', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when true is called', function () {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('should return false when false is called', function () {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false when \'banana\' is called', function () {
+        expect(isVowel('banana')).toBe(false);
+    });
+    it('should return false when nothing is called', function () {
+        expect(isVowel()).toBe(false);
+    });
 });
 
 
